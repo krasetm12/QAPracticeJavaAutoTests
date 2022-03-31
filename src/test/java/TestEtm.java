@@ -12,6 +12,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 
 public class TestEtm{
+  @Epic("Testing FOR https://idev.etm.ru/ipro3/ tasks ")
+  @Feature(value= "Tests for task-basket functionality for market-user")
+  @Severity(SeverityLevel.MINOR)
+  @Description("проверка формы добавить товар-" +
+          "1-вводим логин пароль-" +
+          "2-переходим в корзину-" +
+          "3-кликаем на форму Добавить товар-" +
+          "4-проверяем все поля формы на кликабельность"+
+          "5-закрытие формы")
   @Test
   public void testGoogleSearch() throws InterruptedException {
         // Optional. If not specified, WebDriver searches the PATH for chromedriver.
@@ -41,15 +50,15 @@ public class TestEtm{
 //  public void finish(){
 //    driver.quit();
 //  }
-//  @Epic("Testing FOR https://idev.etm.ru/ipro3/ tasks ")
-//  @Feature(value= "Tests for task-basket functionality for market-user")
-//  @Severity(SeverityLevel.MINOR)
-//  @Description("проверка формы добавить товар-" +
-//          "1-вводим логин пароль-" +
-//          "2-переходим в корзину-" +
-//          "3-кликаем на форму Добавить товар-" +
-//          "4-проверяем все поля формы на кликабельность"+
-//          "5-закрытие формы")
+  @Epic("Testing FOR https://idev.etm.ru/ipro3/ tasks ")
+  @Feature(value= "Tests for task-basket functionality for market-user")
+  @Severity(SeverityLevel.MINOR)
+  @Description("проверка формы добавить товар-" +
+          "1-вводим логин пароль-" +
+          "2-переходим в корзину-" +
+         "3-кликаем на форму Добавить товар-" +
+         "4-проверяем все поля формы на кликабельность"+
+         "5-закрытие формы")
 //  @Test
 //
 //
