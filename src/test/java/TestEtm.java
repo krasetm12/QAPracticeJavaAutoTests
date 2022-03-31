@@ -42,9 +42,8 @@ public class TestEtm{
   @BeforeEach
   public  void start(){
     WebDriverManager.chromedriver().setup();
-    ChromeOptions options= new ChromeOptions();
-    options.setHeadless(true);
-    driver= new ChromeDriver(options);
+    ChromeOptions options = new ChromeOptions().setHeadless(true);
+    WebDriver driver = new ChromeDriver(options);
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   }
