@@ -121,24 +121,24 @@ public class TestEtm{
     driver.findElement(By.name("password")).sendKeys("hzlc3549");
     driver.findElement(By.xpath("//span[contains(.,'Войти в систему')]")).click();
 
-   /* try {
+    try {
       WebElement button = driver.findElement(By.xpath("//a[@href='/catalog']"));
       button.click();
     }
     catch(org.openqa.selenium.StaleElementReferenceException ex)
     {
       WebElement button = driver.findElement(By.xpath("//a[@href='/catalog']"));
+      button.click();
+    }
+   /* try {
+      WebElement button = driver.findElement(By.xpath("//a[@data-testid='top-menu-catalog']"));
+      button.click();
+    }
+    catch(org.openqa.selenium.StaleElementReferenceException ex)
+    {
+      WebElement button = driver.findElement(By.xpath("//a[@data-testid='top-menu-catalog']"));
       button.click();
     }*/
-    try {
-      WebElement button = driver.findElement(By.xpath("//a[@data-testid='top-menu-catalog']"));
-      button.click();
-    }
-    catch(org.openqa.selenium.StaleElementReferenceException ex)
-    {
-      WebElement button = driver.findElement(By.xpath("//a[@data-testid='top-menu-catalog']"));
-      button.click();
-    }
 
 
 
