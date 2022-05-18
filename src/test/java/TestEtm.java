@@ -19,8 +19,8 @@ import java.util.concurrent.TimeUnit;
 public class TestEtm{
 
   public RemoteWebDriver driver;
-  private static final String SELENIUM_URL = "http://localhost:4444/wd/hub";
-  String SITE_URL="https://idev.etm.ru/ipro3";
+  private static final String SELENIUM_URL = "http://jenkins.etm.corp:4444/wd/hub";
+  String SITE_URL="http://jenkins.etm.corp:85/";
 
 
   @BeforeEach
